@@ -1,0 +1,32 @@
+ALGORITHM algorithm_name
+VAR
+    Var tab2 : Array [1..5] of INTEGER;
+    Var tab1 : Array [1..5] of INTEGER;
+    var i:= INTEGER;
+    var j:=INTEGER;
+    sum :=INTEGER;
+    b:=BOOLEAN;
+
+BEGIN
+   sum:=0; 
+   
+      for i=0 to tab1.lenght-1
+        writln('donner element',i, 'du tableau1');
+         read(tab1[i]);
+      for i=0 to tab2.lenght-1
+         writln('donner element',i+1, 'du tableau2');
+         read(tab2[i]);  
+      for  i:=0 to tab1.lenght
+         j:=0;
+         WHILE ((j<b.lenght) and b=false ) DO
+            IF (tab1[i]=tab2[j]) THEN
+                b:=true;
+                sum:=sum+tab1[i];
+            END_IF
+             j:=j+1
+       writln(sum);       
+          END_WHILE     
+               
+
+      
+END
